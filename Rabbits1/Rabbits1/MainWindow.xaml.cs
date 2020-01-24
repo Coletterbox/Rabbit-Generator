@@ -83,13 +83,14 @@ namespace Rabbits1
 
         private void ButtonAgeRabbits100Times_Click(object sender, RoutedEventArgs e)
         {
-            for (int i = 0; i < 100; i++)
-            {
-                var rabbit = new Rabbit();
-                rabbit.Age = 0;
-                // rabbit.RabbitName = "Rabbit" + i;
-                rabbits.Add(rabbit);
-            }
+            //I don't remember what this was testing
+            //for (int i = 0; i < 100; i++)
+            //{
+            //    var rabbit = new Rabbit();
+            //    rabbit.Age = 0;
+            //    // rabbit.RabbitName = "Rabbit" + i;
+            //    rabbits.Add(rabbit);
+            //}
 
             // for testing purposes
             // ListBoxAgeRabbits100Times.Items.Add("Test:" + " " + " (" + GenerateName() + ")");
