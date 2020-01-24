@@ -81,16 +81,18 @@ namespace Rabbits1
             }
         }
 
+        int zombieRabbits = 0;
+
         private void ButtonAgeRabbits100Times_Click(object sender, RoutedEventArgs e)
         {
-            //I don't remember what this was testing
-            //for (int i = 0; i < 100; i++)
-            //{
-            //    var rabbit = new Rabbit();
-            //    rabbit.Age = 0;
-            //    // rabbit.RabbitName = "Rabbit" + i;
-            //    rabbits.Add(rabbit);
-            //}
+            // I don't remember what this was testing
+            // for (int i = 0; i < 100; i++)
+            // {
+            //     var rabbit = new Rabbit();
+            //     rabbit.Age = 0;
+            //     // rabbit.RabbitName = "Rabbit" + i;
+            //     rabbits.Add(rabbit);
+            // }
 
             // for testing purposes
             // ListBoxAgeRabbits100Times.Items.Add("Test:" + " " + " (" + GenerateName() + ")");
@@ -103,6 +105,12 @@ namespace Rabbits1
                 }
                 ListBoxAgeRabbits100Times.Items.Add(rabbit.RabbitName + ", " + rabbit.Age + " years old");
             }
+
+            // every century, there is a wave of zombies
+            Random random = new Random();
+            int newZombieRabbits = random.Next(0, deadRabbits);
+            deadRabbits -= newZombieRabbits;
+            zombieRabbits += newZombieRabbits;
         }
 
         private void ListBoxAgeRabbits100Times_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -130,6 +138,7 @@ namespace Rabbits1
             }
             ListBoxCountRabbits.Items.Add("There are " + liveRabbits + " living rabbits.");
             ListBoxCountRabbits.Items.Add("There are " + deadRabbits + " dead rabbits.");
+            ListBoxCountRabbits.Items.Add("There are " + zombieRabbits + " zombie rabbits.");
         }
 
         private void CountRabbits_SelectionChanged(object sender, SelectionChangedEventArgs e)
