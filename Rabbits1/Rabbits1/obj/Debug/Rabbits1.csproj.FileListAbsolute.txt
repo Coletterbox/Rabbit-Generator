@@ -1,0 +1,14 @@
+C:\Users\Colette Shaw\source\repos\Rabbits1\Rabbits1\bin\Debug\Rabbits1.exe.config
+C:\Users\Colette Shaw\source\repos\Rabbits1\Rabbits1\bin\Debug\Rabbits1.exe
+C:\Users\Colette Shaw\source\repos\Rabbits1\Rabbits1\bin\Debug\Rabbits1.pdb
+C:\Users\Colette Shaw\source\repos\Rabbits1\Rabbits1\obj\Debug\Rabbits1.csprojAssemblyReference.cache
+C:\Users\Colette Shaw\source\repos\Rabbits1\Rabbits1\obj\Debug\MainWindow.g.cs
+C:\Users\Colette Shaw\source\repos\Rabbits1\Rabbits1\obj\Debug\App.g.cs
+C:\Users\Colette Shaw\source\repos\Rabbits1\Rabbits1\obj\Debug\Rabbits1_MarkupCompile.cache
+C:\Users\Colette Shaw\source\repos\Rabbits1\Rabbits1\obj\Debug\Rabbits1_MarkupCompile.lref
+C:\Users\Colette Shaw\source\repos\Rabbits1\Rabbits1\obj\Debug\MainWindow.baml
+C:\Users\Colette Shaw\source\repos\Rabbits1\Rabbits1\obj\Debug\Rabbits1.g.resources
+C:\Users\Colette Shaw\source\repos\Rabbits1\Rabbits1\obj\Debug\Rabbits1.Properties.Resources.resources
+C:\Users\Colette Shaw\source\repos\Rabbits1\Rabbits1\obj\Debug\Rabbits1.csproj.GenerateResource.cache
+C:\Users\Colette Shaw\source\repos\Rabbits1\Rabbits1\obj\Debug\Rabbits1.exe
+C:\Users\Colette Shaw\source\repos\Rabbits1\Rabbits1\obj\Debug\Rabbits1.pdb
