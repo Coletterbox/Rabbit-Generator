@@ -26,12 +26,14 @@ namespace Rabbits1
             InitializeComponent();
         }
 
+        Random random = new System.Random();
+
         string GenerateName()
         {
             string[] firstNameArray = { "Oliver", "George", "Harry", "Jack", "Jacob", "Noah", "Charlie", "Muhammad", "Thomas", "Oscar", "Olivia", "Amelia", "Emily", "Isla", "Ava", "Jessica", "Isabella", "Lily", "Ella", "Mia" };
             string initials = "AAABBBCCCDDDEEEFFFGGGHHIIJJJJJKKKLLLMMMNNNOPPPQRRRSSSTTTUVWWWXYZ";
             string[] lastNameArray = { "Smith", "Johnson", "Williams", "Brown", "Jones", "Miller", "Davis", "Wilson", "Taylor" };
-            Random random = new System.Random();
+            // Random random = new System.Random();
             int firstNameNumber = random.Next(0, firstNameArray.Length - 1);
             int initialsNumber = random.Next(0, initials.Length - 1);
             int lastNameNumber = random.Next(0, lastNameArray.Length - 1);
@@ -66,13 +68,13 @@ namespace Rabbits1
                 rabbits.Add(rabbit);
             }
 
-            //for (int i = 0; i < 100; i++)
-            //{
-            //    foreach (var rabbit in rabbits)
-            //    {
-            //        rabbit.RabbitName += " (" + GenerateName() + ")";
-            //    }
-            //}
+            // for (int i = 0; i < 100; i++)
+            // {
+            //     foreach (var rabbit in rabbits)
+            //     {
+            //         rabbit.RabbitName += " (" + GenerateName() + ")";
+            //     }
+            // }
 
             foreach (var rabbit in rabbits)
             {
