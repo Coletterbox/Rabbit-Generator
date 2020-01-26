@@ -44,46 +44,20 @@ namespace Rabbits1
         {
             for (int i = 0; i < 100; i++)
             {
-                //string GenerateName()
-                //{
-                //    string[] firstNameArray = { "Oliver", "George", "Harry", "Jack", "Jacob", "Noah", "Charlie", "Muhammad", "Thomas", "Oscar", "Olivia", "Amelia", "Emily", "Isla", "Ava", "Jessica", "Isabella", "Lily", "Ella", "Mia" };
-                //    string initials = "AAABBBCCCDDDEEEFFFGGGHHIIJJJJJKKKLLLMMMNNNOPPPQRRRSSSTTTUVWWWXYZ";
-                //    string[] lastNameArray = { "Smith", "Johnson", "Williams", "Brown", "Jones", "Miller", "Davis", "Wilson", "Taylor" };
-                //    Random random = new System.Random();
-                //    int firstNameNumber = random.Next(0, firstNameArray.Length - 1);
-                //    int initialsNumber = random.Next(0, initials.Length - 1);
-                //    int lastNameNumber = random.Next(0, lastNameArray.Length - 1);
-                //    return firstNameArray[firstNameNumber] + " " + initials[initialsNumber] + ". " + lastNameArray[lastNameNumber];
-                //}
-
                 var rabbit = new Rabbit();
                 rabbit.RabbitName = "Rabbit" + " " + (i + 1) + " (" + GenerateName() + ")";
-
-                //rabbit.RabbitName = "Rabbit" + " " + (i + 1);
-
-                //foreach (var rabbit in rabbits)
-                //{
-                //    rabbit.RabbitName = "Rabbit" + " " + (i + 1) + " (" + GenerateName() + ")";
-                //}
+                rabbit.isLiving = true;
+                rabbit.isZombie = false;
                 rabbits.Add(rabbit);
             }
 
-            // for (int i = 0; i < 100; i++)
-            // {
-            //     foreach (var rabbit in rabbits)
-            //     {
-            //         rabbit.RabbitName += " (" + GenerateName() + ")";
-            //     }
-            // }
-
             foreach (var rabbit in rabbits)
             {
-                // rabbit.RabbitName = "Rabbit" + " (" + GenerateName() + ")";
                 ListBox100Rabbits.Items.Add(rabbit.RabbitName); // add string name
             }
         }
 
-        int zombieRabbits = 0;
+        //int zombieRabbits = 0;
 
         private void ButtonAgeRabbits100Times_Click(object sender, RoutedEventArgs e)
         {
@@ -97,10 +71,10 @@ namespace Rabbits1
             }
 
             // every century, there is a wave of zombies
-            Random random = new Random();
-            int newZombieRabbits = random.Next(0, deadRabbits);
-            deadRabbits -= newZombieRabbits;
-            zombieRabbits += newZombieRabbits;
+            //Random random = new Random();
+            //int newZombieRabbits = random.Next(0, deadRabbits);
+            //deadRabbits -= newZombieRabbits;
+            //zombieRabbits += newZombieRabbits;
         }
 
         private void ListBoxAgeRabbits100Times_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -130,7 +104,7 @@ namespace Rabbits1
             }
             ListBoxCountRabbits.Items.Add("There are " + liveRabbits + " living rabbits.");
             ListBoxCountRabbits.Items.Add("There are " + deadRabbits + " dead rabbits.");
-            ListBoxCountRabbits.Items.Add("There are " + zombieRabbits + " zombie rabbits.");
+            //ListBoxCountRabbits.Items.Add("There are " + zombieRabbits + " zombie rabbits.");
         }
 
         private void CountRabbits_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -142,5 +116,7 @@ namespace Rabbits1
     {
         public string RabbitName { get; set; }
         public int Age { get; set; }
+        public bool isLiving { get; set; }
+        public bool isZombie { get; set; }
     }
 }
