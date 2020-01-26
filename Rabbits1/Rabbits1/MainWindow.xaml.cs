@@ -87,18 +87,6 @@ namespace Rabbits1
 
         private void ButtonAgeRabbits100Times_Click(object sender, RoutedEventArgs e)
         {
-            // I don't remember what this was testing
-            // for (int i = 0; i < 100; i++)
-            // {
-            //     var rabbit = new Rabbit();
-            //     rabbit.Age = 0;
-            //     // rabbit.RabbitName = "Rabbit" + i;
-            //     rabbits.Add(rabbit);
-            // }
-
-            // for testing purposes
-            // ListBoxAgeRabbits100Times.Items.Add("Test:" + " " + " (" + GenerateName() + ")");
-
             foreach (var rabbit in rabbits)
             {
                 for (int i = 0; i < 100; i++)
@@ -124,6 +112,8 @@ namespace Rabbits1
         int liveRabbits = 0;
         public void CountRabbits_Click(object sender, RoutedEventArgs e)
         {
+            deadRabbits = 0;
+            liveRabbits = 0;
             foreach (var rabbit in rabbits)
             {
                 //for (int i = 0; i < rabbits.Count; i++)
