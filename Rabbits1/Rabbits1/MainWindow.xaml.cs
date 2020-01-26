@@ -117,7 +117,14 @@ namespace Rabbits1
             foreach (var rabbit in rabbits)
             {
                 rabbit.Age++;
-                ListBoxAgeRabbitsOnce.Items.Add(rabbit.RabbitName + ", " + rabbit.Age + " years old");
+                if (rabbit.Age == 1)
+                {
+                    ListBoxAgeRabbitsOnce.Items.Add(rabbit.RabbitName + ", " + rabbit.Age + " year old");
+                }
+                else
+                {
+                    ListBoxAgeRabbitsOnce.Items.Add(rabbit.RabbitName + ", " + rabbit.Age + " years old");
+                }
             }
         }
 
