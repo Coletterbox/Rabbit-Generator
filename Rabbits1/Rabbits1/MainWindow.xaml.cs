@@ -94,6 +94,7 @@ namespace Rabbits1
                 //{
                     if (rabbit.Age > 10)
                     {
+                        rabbit.isLiving = false;
                         deadRabbits++;
                     }
                     else
@@ -109,6 +110,20 @@ namespace Rabbits1
 
         private void CountRabbits_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+        }
+
+        private void ButtonAgeRabbitsOnce_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (var rabbit in rabbits)
+            {
+                rabbit.Age++;
+                ListBoxAgeRabbitsOnce.Items.Add(rabbit.RabbitName + ", " + rabbit.Age + " years old");
+            }
+        }
+
+        private void ListBoxAgeRabbitsOnce_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 
