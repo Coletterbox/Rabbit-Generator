@@ -20,6 +20,7 @@
             <RowDefinition Height="3*" />
             <RowDefinition Height="3*" />
             <RowDefinition Height="15*" />
+            <RowDefinition Height="10*" />
         </Grid.RowDefinitions>
         <Button x:Name="Button100Rabbits" Grid.Row="1" Grid.Column="0" BorderBrush="#F1D6B8" BorderThickness="5" Background="#B9D2B1" Content="Generate 100 Rabbits" Click="Button100Rabbits_Click"></Button>
         <Button x:Name="ButtonRabbitBirths" Grid.Row="1" Grid.Column="1" BorderBrush="#F1D6B8" BorderThickness="5" Background="#B9D2B1" Content="Rabbit Birth Announcments" Click="RabbitBirths_Click"></Button>
@@ -34,5 +35,6 @@
         <ListBox x:Name="ListBoxRabbitBirths" Grid.Column="1" Grid.Row="3" BorderBrush="#F1D6B8" BorderThickness="5" Background="#FBACBE" SelectionChanged="RabbitBirths_SelectionChanged" />
         <ListBox x:Name="ListBoxZombieProblem" Grid.Column="4" Grid.Row="3" BorderBrush="#F1D6B8" BorderThickness="5" Background="#FBACBE" SelectionChanged="ListBoxZombieProblem_SelectionChanged" />
         <ListBox x:Name="ListBoxCountRabbits" Grid.Column="5" Grid.Row="3" BorderBrush="#F1D6B8" BorderThickness="5" Background="#FBACBE" SelectionChanged="CountRabbits_SelectionChanged" />
+        <ListBox x:Name="ListBoxRabbitSample" Grid.Column="0" Grid.Row="4" BorderBrush="#F1D6B8" BorderThickness="5" Background="#FBACBE" SelectionChanged="ListBoxRabbitSample_SelectionChanged" />
     </Grid>
 </Window>

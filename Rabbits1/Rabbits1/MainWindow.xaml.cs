@@ -40,6 +40,15 @@ namespace Rabbits1
             return firstNameArray[firstNameNumber] + " " + initials[initialsNumber] + ". " + lastNameArray[lastNameNumber];
         }
 
+        //public void CreateRabbit()
+        //{
+        //    var rabbit = new Rabbit();
+        //    rabbit.RabbitName = "Rabbit" + " " + (i + 1) + " (" + GenerateName() + ")";
+        //    rabbit.isLiving = true;
+        //    rabbit.isZombie = false;
+        //    rabbits.Add(rabbit);
+        //}
+
         private void Button100Rabbits_Click(object sender, RoutedEventArgs e)
         {
             //int currentRabbitCount = rabbits.Count;
@@ -47,17 +56,23 @@ namespace Rabbits1
             //ListBox100Rabbits.Items.Add(currentRabbitCount);
             for (int i = 0; i < 100; i++)
             {
+                //CreateRabbit();
                 var rabbit = new Rabbit();
                 //rabbit.RabbitName = "Rabbit" + " " + (currentRabbitCount + i + 1) + " (" + GenerateName() + ")" + currentRabbitCount;
                 rabbit.RabbitName = "Rabbit" + " " + (i + 1) + " (" + GenerateName() + ")";
                 rabbit.isLiving = true;
                 rabbit.isZombie = false;
+                rabbit.Count = i;
                 rabbits.Add(rabbit);
             }
 
             foreach (var rabbit in rabbits)
             {
                 ListBox100Rabbits.Items.Add(rabbit.RabbitName); // add string name
+                if (rabbit.Count % 10 == 0)
+                {
+                    ListBoxRabbitSample.Items.Add(rabbit.RabbitName);
+                }
             }
         }
 
@@ -138,6 +153,17 @@ namespace Rabbits1
                 {
                     ListBoxAgeRabbitsOnce.Items.Add(rabbit.RabbitName + " is now " + rabbit.Age + " years old!");
                 }
+                if (rabbit.Age == 3)
+                {
+                    ListBoxRabbitBirths.Items.Add(rabbit.RabbitName + " gave birth!");
+                    //var rabbitOffspring = new Rabbit();
+                    //rabbitOffspring.RabbitName = "Rabbit Offspring (" + GenerateName() + ")";
+                    //rabbitOffspring.isLiving = true;
+                    //rabbitOffspring.isZombie = false;
+                    //rabbits.Add(rabbitOffspring);
+                    
+                    //rabbits.Add(rabbit);
+                }
             }
         }
 
@@ -181,6 +207,11 @@ namespace Rabbits1
         {
 
         }
+
+        private void ListBoxRabbitSample_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 
     class Rabbit
@@ -189,5 +220,6 @@ namespace Rabbits1
         public int Age { get; set; }
         public bool isLiving { get; set; }
         public bool isZombie { get; set; }
+        public int Count { get; set; }
     }
 }
