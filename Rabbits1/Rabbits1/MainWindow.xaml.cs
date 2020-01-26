@@ -171,6 +171,16 @@ namespace Rabbits1
         {
 
         }
+
+        private void RabbitBirths_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RabbitBirths_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 
     class Rabbit
