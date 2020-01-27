@@ -143,6 +143,7 @@ namespace Rabbits1
 
         private void ButtonAgeRabbitsOnce_Click(object sender, RoutedEventArgs e)
         {
+            int offspringCounter = 0;
             foreach (var rabbit in rabbits)
             {
                 rabbit.Age++;
@@ -164,14 +165,20 @@ namespace Rabbits1
                     //rabbits.Add(rabbitOffspring);
 
                     //newRabbits.Add(rabbit);
-
+                    //rabbits.Add(rabbit);
+                    offspringCounter++;
                     //var rabbit = new Rabbit();
                 }
             }
-            //foreach (var rabbit in newRabbits)
-            //{
-            //    rabbits.Add(rabbit);
-            //}
+            for (int j = 0; j < offspringCounter; j++)
+            {
+                var rabbit = new Rabbit();
+                rabbit.RabbitName = "Rabbit" + " " + (rabbits.Count + j + 1) + " (" + GenerateName() + ")";
+                rabbit.isLiving = true;
+                rabbit.isZombie = false;
+                rabbit.Count = rabbits.Count + j + 1;
+                rabbits.Add(rabbit);
+            }
         }
 
         private void ListBoxAgeRabbitsOnce_SelectionChanged(object sender, SelectionChangedEventArgs e)
