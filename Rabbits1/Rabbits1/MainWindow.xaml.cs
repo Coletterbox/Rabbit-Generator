@@ -21,6 +21,7 @@ namespace Rabbits1
     public partial class MainWindow : Window
     {
         static List<Rabbit> rabbits = new List<Rabbit>();
+        //static List<Rabbit> newRabbits = new List<Rabbit>();
         public MainWindow()
         {
             InitializeComponent();
@@ -161,10 +162,16 @@ namespace Rabbits1
                     //rabbitOffspring.isLiving = true;
                     //rabbitOffspring.isZombie = false;
                     //rabbits.Add(rabbitOffspring);
-                    
-                    //rabbits.Add(rabbit);
+
+                    //newRabbits.Add(rabbit);
+
+                    //var rabbit = new Rabbit();
                 }
             }
+            //foreach (var rabbit in newRabbits)
+            //{
+            //    rabbits.Add(rabbit);
+            //}
         }
 
         private void ListBoxAgeRabbitsOnce_SelectionChanged(object sender, SelectionChangedEventArgs e)

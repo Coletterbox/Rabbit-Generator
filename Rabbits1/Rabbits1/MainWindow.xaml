@@ -23,7 +23,7 @@
             <RowDefinition Height="10*" />
         </Grid.RowDefinitions>
         <Button x:Name="Button100Rabbits" Grid.Row="1" Grid.Column="0" BorderBrush="#F1D6B8" BorderThickness="5" Background="#B9D2B1" Content="Generate 100 Rabbits" Click="Button100Rabbits_Click"></Button>
-        <Button x:Name="ButtonRabbitBirths" Grid.Row="1" Grid.Column="1" BorderBrush="#F1D6B8" BorderThickness="5" Background="#B9D2B1" Content="Rabbit Birth Announcments" Click="RabbitBirths_Click"></Button>
+        <Button x:Name="ButtonRabbitBirths" Grid.Row="1" Grid.Column="1" BorderBrush="#F1D6B8" BorderThickness="5" Background="#B9D2B1" Content="Rabbit Birth Announcements" Click="RabbitBirths_Click"></Button>
         <Button x:Name="ButtonAgeRabbits100Times" Grid.Row="1" Grid.Column="3" BorderBrush="#F1D6B8" BorderThickness="5" Background="#B9D2B1" Content="Age Rabbits 100 Times" Click="ButtonAgeRabbits100Times_Click"></Button>
         <Button x:Name="ButtonAgeRabbitsOnce" Grid.Row="1" Grid.Column="2" BorderBrush="#F1D6B8" BorderThickness="5" Background="#B9D2B1" Content="Age Rabbits Once" Click="ButtonAgeRabbitsOnce_Click"></Button>
         <Button x:Name="ButtonZombieProblem" Grid.Row="1" Grid.Column="4" BorderBrush="#F1D6B8" BorderThickness="5" Background="#B9D2B1" Content="Introduce Zombie Problem" Click="ButtonZombieProblem_Click"></Button>
